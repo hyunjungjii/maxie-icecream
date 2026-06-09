@@ -28,6 +28,11 @@ html, body, #root {
   width: 100%;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font);
   background: #e8e4dd;
@@ -39,7 +44,8 @@ body {
 
 /* Phone shell wrapper */
 .phone-shell {
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   min-height: 780px;
   background: var(--bg);
   border-radius: 40px;
@@ -488,4 +494,8 @@ body {
 @keyframes bounce {
   0%, 80%, 100% { transform: scale(0.6); opacity: 0.5; }
   40%            { transform: scale(1); opacity: 1; }
+}
+
+.screen {
+  overflow-x: hidden;
 }
